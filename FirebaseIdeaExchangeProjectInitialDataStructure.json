@@ -1,0 +1,22 @@
+{
+  "challenges" : {
+    "2012-12-22-10:28:05" : {
+      "archive" : false,
+      "content" : "We just rescued a male border collie mix and we are in desperate need of help with names to break our family tie(s)!  Please help when you can!",
+      "image" : "",
+      "name" : "Help Name our Rescue Dog!",
+      "slides" : {
+        "xplaceholder" : {
+          "content" : "this is a placeholder",
+          "userID" : "placeholder"
+        }
+      }
+    }
+  },
+  "users" : {
+    "placeholder" : {
+      "email" : "email@gmail.com",
+      "name" : "name of placeholder person"
+    }
+  }
+}
