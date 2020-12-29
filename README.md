@@ -10,7 +10,7 @@ you'll immediately think of several things that this illustrative app DOESN'T
 do; we're purposely paring down  functionality to the very minimum required to
 illustrate a multi user Firebase implementation.
 
-####Authentication
+###Authentication
 
 Authentication is required in order to distinguish the data entered by
 individual users.  Many apps can function as a single user app, for example, a
@@ -66,7 +66,7 @@ and name of the user as provided on scnLogin.  Firebase supports a limited
 number of punctuation characters as keys, hence the need for the
 "userIdFromEmail" function.
 
-####Firebase database structure
+###Firebase database structure
 
 We can't go much further without discussing the structure of the Firebase
 ("Realtime") database, as well as how we go about creating the database and
@@ -82,7 +82,7 @@ have elected to store the "slides" (slides are new ideas) as an array beneath
 the slides attribute, but Firebase's functionality promotes the structure as
 shown below.
 
-![Firebase Realtime DB structure]
+![Firebase Realtime DB structure](/ThunkableFirebaseDatabaseStructureImage.png?raw=true "Firebase Structure")
 
 Beneath the root of our app, we have two keys, users and challenges.  A
 challenge is an invitation to collect ideas about a specific challenge
@@ -110,10 +110,10 @@ conditional logic to the code required for first time usage.  Once you have
 added a user and some slides, you can manually delete the placeholder branches
 using Firebase's console.
 
-####Creating the Firebase database and linking it to Thunkable
+###Creating the Firebase database and linking it to Thunkable
 
 Thunkable's instructions for this process are quite good and here I'll simply
-point you to those here https://docs.thunkable.com/realtime-db.  Within the
+[point you to those here](https://docs.thunkable.com/realtime-db).  Within the
 Firebase console, be sure that you have Enabled Email/Password as the only
 Authentication Sign-In method, and that your Realtime database Rules are set
 as follows:
@@ -150,7 +150,7 @@ You should now be able to replicate this project's scnLogin Design and Blocks
 within your Thunkable app, and by doing so, add your own users to your
 Firebase database.
 
-####The Idea Exchange App's Challenge, New and View screens
+###The Idea Exchange App's Challenge, New and View screens
 
 In this app illustration we've used Thunkable's bottom tab navigator, removing
 one of the default screens and renaming the others to scnChallenge, scnNew and
@@ -198,7 +198,7 @@ property in addition to the content property.  You could display all slides
 menu properties within the List Viewer, and clicking on any list item would
 then display the content property of the selected slide.
 
-####Conclusion
+###Conclusion
 
 I hope that this app will be of use to Thunkable users considering how to
 manage data from multiple users with their app.  Please feel free to share
