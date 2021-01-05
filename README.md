@@ -72,7 +72,6 @@ We can't go much further without discussing the structure of the Firebase
 ("Realtime") database, and as well how we go about creating the database and
 linking it to our Thunkable app.
 
-
 Firebase uses key / value pairs to
 store data, unlike a spreadsheet or SQL database that models data as rows
 (records) and columns (fields).  When planning your database structure, try to
@@ -104,9 +103,14 @@ entered) and the userID, which associates the content to a specific user.
 
 You'll note the addition of "placeholders" beneath the user and slides keys.
 Firebase doesn't have the concept of an empty or null key; you search for a
-key and if it isn't found you assume it is empty and you add it.  Adding
-placeholders as shown was easier (*cough* lazy) as it avoids adding the
-conditional logic to the code required for first time usage.  Once you have
+key and if it isn't found you assume it is empty and you add it.  Within Thunkable,
+this implies the use of "Get" method within the Firebase block, and testing for
+the returned value to be equal to null (null meaning that the key does not exist).
+
+As a consequence, adding placeholders as shown in the schema above was just easier 
+(*cough* lazy) as it avoids adding the
+conditional logic to the code required for first time usage when the keys initially do not exist.  
+Once you have
 added a user and some slides, you can manually delete the placeholder branches
 using Firebase's Console.
 
